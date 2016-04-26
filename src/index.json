@@ -1,0 +1,706 @@
+{
+  "site": {
+    "title": "SGRQ",
+    "dateFormat": "Y-m-d"
+  },
+  "home": {
+    "title": "St. George’s Respiratory Questionnaire<br>for COPD patients",
+    "content": "<p>This application calculates scores derived from the St George’s Respiratory Questionnaire (SGRQ) and the SGRQ-C.</p><p>The SGRQ has been validated in COPD, asthma, and several other respiratory diseases. The SGRQ-C has been developed using COPD data, and has not yet been validated for other diseases, but is likely to perform similar to SGRQ. For a detailed background and further instructions please visit <a target=\"_blank\" href=\"http://www.healthstatus.sgul.ac.uk/\">http://www.healthstatus.sgul.ac.uk/</a>.</p><p>Both questionnaires have three components: Symptoms (quantifying distress due to respiratory symptoms), activity (the effect of disturbances to mobility and physical activity), and impact (psychosocial impact of disease). A total score provides a global estimate of the respiratory health. The scoring range from 0 to 100 for each component, where a higher number is indicative of poorer health. For the SGRQ, a four unit change has been established as clinically relevant.</p>"
+  },
+  "new": {
+    "title": "New Questionnaire",
+    "content": "",
+    "submit": "Submit",
+    "select": "Select a questionnaire type:",
+    "fill": "Fill the questionnaire:",
+    "start": "Start"
+  },
+  "list": {
+    "title": "Questionnaires",
+    "content": ""
+  },
+  "listOne": {
+    "title": "Questionnaire"
+  },
+  "patient": {
+    "title": "Patient information (optional)",
+    "labels": {
+      "id": "Patient ID",
+      "total": "Total score",
+      "birth": "Birth date",
+      "male": "Male",
+      "female": "Female",
+      "gender": "Gender",
+      "notes": "Notes" 
+    }
+  },
+  "patients": {
+    "title": "Patients",
+    "content": ""
+  },
+  "patientOne": {
+    "title": "Patient Info"
+  },
+  "about": {
+    "title": "About us",
+    "content": "<p>This application is free for use. You can copy and redistribute it as you wish.<span class=\"cite\"><i>[1]</i></span><br>It has been developed by Marco Gelpi, MD; Jonathan Argentiero, Developer; and Andreas Ronit, MD (Department of Infectious Diseases, University Hospital of Copenhagen).</p><p>The code of this application is open source and available on Github. If you encounter any problems or bugs, or would like to have a certain feature implemented, you can declare them on our Github Issues page or write to <a target=\"_blank\" href=\"mailto:andreas.ronit@regionh.dk\">andreas.ronit@regionh.dk</a>. If you use the software in your scientific work, please consider citing us.</p><p>Do similar programs exist? Yes, an excel based tool for the original SGRQ can be acquired from <a target=\"_blank\" href=\"http://www.healthstatus.sgul.ac.uk/\">http://www.healthstatus.sgul.ac.uk/</a>. Please contact us if you know other similar respiratory tools that should be uploaded as well.</p><p><a class=\"link--icon\" href=\"http://sgrq.github.io\" target=\"_blank\"><i class=\"material-icons\">public</i> Homepage</a></p><p><a class=\"link--icon\" href=\"https://github.com/sgrq/sgrq/issues\" target=\"_blank\"><i class=\"material-icons\">bug_report</i> Github Issues</a></p><p><small>[1] The St. George Medical School charges commercial organizations a license fee for use of the SGRQ.</small></p>"
+  },
+  "questionnaires": [
+    {
+      "name": "SGRQ",
+      "title": "St. George’s Respiratory Questionnaire",
+      "description": "Questions about how much chest trouble you have, your activity and the impact.",
+      "categories": {
+        "1": { 
+          "name": "Symptoms",
+          "maxAnswersMissing": 2
+        },
+        "2": {
+          "name": "Activity",
+          "maxAnswersMissing": 4
+        },
+        "3": {
+          "name": "Impacts",
+          "maxAnswersMissing": 6
+        }
+      },
+      "questions": [
+        {
+          "q": "Over the last year, I have coughed:",
+          "number": 1,
+          "category": "1",
+          "a": [{
+            "text": "Most days a week",
+            "score": 80.6
+          },{
+            "text": "Several days a week",
+            "score": 63.2
+          },{
+            "text": "A few days a week",
+            "score": 29.3
+          },{
+            "text": "With chest infection a week",
+            "score": 28.1
+          },{
+            "text": "Not at all",
+            "score": 0.0
+          }]
+        },{
+          "q": "Over the last year, I have brought up phlegm (sputum):",
+          "number": 2,
+          "category": "1",
+          "a": [{
+            "text": "Most days a week",
+            "score": 76.8
+          },{
+            "text": "Several days a week",
+            "score": 60.0
+          },{
+            "text": "A few days a week",
+            "score": 34.0
+          },{
+            "text": "With chest infection a week",
+            "score": 30.2
+          },{
+            "text": "Not at all",
+            "score": 0.0
+          }]
+        },{
+          "q": "Over the last year, I have had shortness of breath:",
+          "number": 3,
+          "category": "1",
+          "a": [{
+            "text": "Most days a week",
+            "score": 87.2
+          },{
+            "text": "Several days a week",
+            "score": 71.4
+          },{
+            "text": "A few days a week",
+            "score": 43.7
+          },{
+            "text": "With chest infection a week",
+            "score": 35.7
+          },{
+            "text": "Not at all",
+            "score": 0.0
+          }]
+        },{
+          "q": "Over the last year, I have had attacks of wheezing:",
+          "number": 4,
+          "category": "1",
+          "a": [{
+            "text": "Most days a week",
+            "score": 86.2
+          },{
+            "text": "Several days a week",
+            "score": 71.0
+          },{
+            "text": "A few days a week",
+            "score": 45.6
+          },{
+            "text": "With chest infection a week",
+            "score": 36.4
+          },{
+            "text": "Not at all",
+            "score": 0.0
+          }]
+        },{
+          "q": "Over the last year, how many severe or very bad unpleasant attacks of chest trouble have you had?",
+          "number": 5,
+          "category": "1",
+          "a": [{
+            "text": "More than three",
+            "score": 86.7
+          },{
+            "text": "3 attacks",
+            "score": 73.5
+          },{
+            "text": "2 attacks",
+            "score": 60.3
+          },{
+            "text": "1 attack",
+            "score": 44.2
+          },{
+            "text": "none",
+            "score": 0.0
+          }]
+        },{
+          "q": "How long did the worst attack of chest trouble last?",
+          "number": 6,
+          "category": "1",
+          "a": [{
+            "text": "A week or more",
+            "score": 89.7
+          },{
+            "text": "3 or more days",
+            "score": 73.5
+          },{
+            "text": "1 or 2 days",
+            "score": 58.8
+          },{
+            "text": "Less than a day",
+            "score": 41.9
+          }]
+        },{
+          "q": "Over the last year, in an average week, how many good days (with little chest trouble) have you had?",
+          "number": 7,
+          "category": "1",
+          "a": [{
+            "text": "None",
+            "score": 93.3
+          },{
+            "text": "1 or 2",
+            "score": 76.6
+          },{
+            "text": "3 or 4",
+            "score": 61.5
+          },{
+            "text": "Nearly every day",
+            "score": 15.4
+          },{
+            "text": "Every day",
+            "score": 0.0
+          }]
+        },{
+          "q": "If you have a wheeze, is it worse in the morning?",
+          "number": 8,
+          "category": "1",
+          "a": [{
+            "text": "No",
+            "score": 0.0
+          },{
+            "text": "Yes",
+            "score": 62.0          
+          }]
+        },{
+          "q": "How would you describe your chest condition?",
+          "number": 9,
+          "category": "3",
+          "a": [{
+            "text": "The most important problem I have",
+            "score": 83.2
+          },{
+            "text": "Causes me quite a lot of problems",
+            "score": 82.5
+          },{
+            "text": "Causes me a few problems",
+            "score": 34.6
+          },{
+            "text": "Causes no problem",
+            "score": 0.0      
+          }]
+        },{
+          "q": "If you have ever had paid employment?",
+          "number": 10,
+          "category": "3",
+          "a": [{
+            "text": "My chest trouble made me stop work",
+            "score": 88.9
+          },{
+            "text": "My chest trouble interferes with my work or made me change my work",
+            "score": 77.6
+          },{
+            "text": "My chest trouble does not affect my work",
+            "score": 0.0            
+          }]
+        },{
+          "q": "Questions about what activities usually make you feel breathless these days",
+          "number": 11,
+          "category": "2",
+          "boolean": true,
+          "a": [{
+            "text": "Sitting or lying still",
+            "score": 90.6
+          },{
+            "text": "Getting washed or dressed",
+            "score": 82.8
+          },{
+            "text": "Walking around the home",
+            "score": 80.2
+          },{
+            "text": "Walking outside on the level",
+            "score": 81.4
+          },{
+            "text": "Walking up a flight of stairs",
+            "score": 76.1
+          },{
+            "text": "Walking up hills",
+            "score": 75.1
+          },{
+            "text": "Playing sports or games",
+            "score": 72.1 
+          }]
+        },{
+          "q": "More questions about your cough and breathlessness these days",
+          "number": 12,
+          "category": "3",
+          "boolean": true,
+          "a": [{
+            "text": "My cough hurts",
+            "score": 81.1
+          },{
+            "text": "My cough makes me tired",
+            "score": 79.1
+          },{
+            "text": "I get breathless when I talk",
+            "score": 84.5
+          },{
+            "text": "I get breathless wehn I bend over",
+            "score": 76.8
+          },{
+            "text": "My cough or breathing disturbs my sleep",
+            "score": 87.9
+          },{
+            "text": "I get exhausted easily",
+            "score": 84.0          
+          }]
+        },{
+          "q": "Questions about other effects your chest trouble may have on you",
+          "number": 13,
+          "category": "3",
+          "boolean": true,
+          "a": [{
+            "text": "My cough or breathing is embarassing in public",
+            "score": 74.1
+          },{
+            "text": "My cough makes me tired",
+            "score": 79.1
+          },{
+            "text": "My chest trouble is a nuisance to my family, friends or neighbours",
+            "score": 87.7
+          },{
+            "text": "I feel I am not in control of my chest problem",
+            "score": 90.1
+          },{
+            "text": "I do no expect my chest to get any better",
+            "score": 82.3
+          },{
+            "text": "I have become frail or an invalid because of my chest",
+            "score": 89.9
+          },{
+            "text": "Exercise is not safe for me",
+            "score": 75.7
+          },{
+            "text": "Everything seems to much of an effort",
+            "score": 84.5                  
+          }]
+        },{
+          "q": "Questions about your medications",
+          "number": 14,
+          "category": "3",
+          "boolean": true,
+          "a": [{
+            "text": "My medications does not help me very much",
+            "score": 88.2
+          },{
+            "text": "I get embarrassed using my medication in public",
+            "score": 53.9
+          },{
+            "text": "I have unpleasant side effects from my medication",
+            "score": 81.1
+          },{
+            "text": "My medication interferes with my life a lot",
+            "score": 70.3                       
+          }]
+        },{
+          "q": "Questions about how activities may be affected by your breathing",
+          "number": 15,
+          "category": "2",
+          "boolean": true,
+          "a": [{
+            "text": "I take a long time to get washed or dressed",
+            "score": 74.2
+          },{
+            "text": "I cannot take a bath or shower, or I take a long time",
+            "score": 81.0
+          },{
+            "text": "I walk more slowly than oter people, or I stop for rests",
+            "score": 71.7
+          },{
+            "text": "Jobs such as housework take a long time, or I have to stop for rests",
+            "score": 70.6
+          },{
+            "text": "If I walk up one flight of stairs, I have to go slowly or stop",
+            "score": 71.6
+          },{
+            "text": "If I hurry or walk fast, I have to stop or slow down",
+            "score": 72.3
+          },{
+            "text": "My breathing makes it difficult to do things such as walk up hills, carry things up stairs, light gardening such as weeding, dance, play bowls or play golf",
+            "score": 74.5
+          },{
+            "text": "My breathing makes it difficult to do things such as carry heavy loads, dig the garden or shovel snow, jog or walk at 5 miles per hour, play tennis or swim",
+            "score": 71.4   
+          },{
+            "text": "My breathing makes it difficult to do things such as very heavy manual work, run, cycle, swim fast or play competitive sports",
+            "score": 63.5       
+          }]
+        },{
+          "q": "Questions about your medications",
+          "number": 16,
+          "category": "3",
+          "boolean": true,
+          "a": [{
+            "text": "I cannot play sports or games",
+            "score": 64.8
+          },{
+            "text": "I cannot go out for entertainment or recreation",
+            "score": 79.8
+          },{
+            "text": "I cannot go out of the house to do shopping",
+            "score": 81.0
+          },{
+            "text": "I cannot do housework",
+            "score": 79.1
+          },{
+            "text": "I cannot move far from my bed or chair",
+            "score": 94.0     
+          }]
+        },{
+          "q": "Tick the statement which you think best describes how your chest affects you.",
+          "number": 17,
+          "category": "3",
+          "a": [{
+            "text": "It does not stop me doing anything I would like to do",
+            "score": 0
+          },{
+            "text": "It stops me doing one or two things I would like to do",
+            "score": 42.0
+          },{
+            "text": "It stops me doing most of the things I would like to do",
+            "score": 84.2
+          },{
+            "text": "It stops me doing everything I would like to do",
+            "score": 96.7
+          }]
+        }]      
+    },
+    {
+      "name": "SGRQ-C",
+      "title": "St. George’s Respiratory Questionnaire for COPD",
+      "description": "Questions about how much chest trouble you have, your activity and the impact.",
+      "categories": {
+        "1": { 
+          "name": "Symptoms",
+          "maxAnswersMissing": 1
+        },
+        "2": {
+          "name": "Activity",
+          "maxAnswersMissing": 3
+        },
+        "3": {
+          "name": "Impacts",
+          "maxAnswersMissing": 5
+        }
+      },
+      "questions": [
+        {
+          "q": "I cough:",
+          "number": 1,
+          "category": "1",
+          "a": [{
+            "text": "Most days",
+            "score": 80.6
+          },{
+            "text": "Several days",
+            "score": 46.3
+          },{
+            "text": "With chest infections",
+            "score": 28.1
+          },{
+            "text": "Not at all",
+            "score": 0.0
+          }]
+        },{
+          "q": "I bring up phlegm (sputum):",
+          "number": 2,
+          "category": "1",
+          "a": [{
+            "text": "Most days",
+            "score": 76.8
+          },{
+            "text": "Several days",
+            "score": 47.0
+          },{
+            "text": "With chest infections:",
+            "score": 30.2
+          },{
+            "text": "Not at all",
+            "score": 0.0
+          }]
+        },{
+          "q": "I have shortness of breath:",
+          "number": 3,
+          "category": "1",
+          "a": [{
+            "text": "Most days",
+            "score": 87.2
+          },{
+            "text": "Several days",
+            "score": 50.3
+          },{
+            "text": "Not at all",
+            "score": 0.0
+          }]
+        },{
+          "q": "I have attacks of wheezing:",
+          "number": 4,
+          "category": "1",
+          "a": [{
+            "text": "Most days",
+            "score": 86.2
+          },{
+            "text": "Several days",
+            "score": 71.0
+          },{
+            "text": "A few days",
+            "score": 45.6
+          },{
+            "text": "With chest infection",
+            "score": 36.4
+          },{
+            "text": "Not at all",
+            "score": 0.0
+          }]
+        },{
+          "q": "How many attacks of chest trouble have you had?",
+          "number": 5,
+          "category": "1",
+          "a": [{
+            "text": "3 or more",
+            "score": 80.1
+          },{
+            "text": "1 or 2 attacks",
+            "score": 52.3
+          },{
+            "text": "None",
+            "score": 0.0
+          }]
+        },{
+          "q": "How often do you have good days (with little chest trouble)?",
+          "number": 6,
+          "category": "1",
+          "a": [{
+            "text": "None",
+            "score": 93.3
+          },{
+            "text": "A few",
+            "score": 76.6
+          },{
+            "text": "Most are good",
+            "score": 38.5
+          },{
+            "text": "Every day",
+            "score": 0.0
+          }]
+        },{
+          "q": "If you have a wheeze, is it worse in the morning?",
+          "number": 7,
+          "category": "1",
+          "a": [{
+            "text": "No",
+            "score": 0.0
+          },{
+            "text": "Yes",
+            "score": 62.0
+          }]
+        },{
+          "q": "How would you describe your chest condition?",
+          "number": 8,
+          "category": "3",
+          "a": [{
+            "text": "Causes me a lot of problems or is the most important problem I have",
+            "score": 82.9
+          },{
+            "text": "Causes me a few problems",
+            "score": 34.6
+          },{
+            "text": "Causes no problem",
+            "score": 0.0
+          }]
+        },{
+          "q": "Questions about what activities usually make you feel breathless.",
+          "number": 9,
+          "category": "2",
+          "boolean": true,
+          "a": [{
+            "text": "Getting washed or dressed",
+            "score": 82.8
+          },{
+            "text": "Walking around the home",
+            "score": 80.2
+          },{
+            "text": "Walking outside on the level",
+            "score": 81.4
+          },{
+            "text": "Walking up a flight of stairs",
+            "score": 76.1
+          },{
+            "text": "Walking up hills",
+            "score": 75.1
+          }]
+        },{
+          "q": "More questions about your cough and breathlessness.",
+          "number": 10,
+          "category": "3",
+          "boolean": true,
+          "a": [{
+            "text": "My cough hurts",
+            "score": 81.1
+          },{
+            "text": "My cough makes me tired",
+            "score": 79.1
+          },{
+            "text": "I get breathless when I talk",
+            "score": 84.5
+          },{
+            "text": "I get breathless when I bend over",
+            "score": 76.8
+          },{
+            "text": "My cough or breathing disturbs my sleep",
+            "score": 87.9
+          },{
+            "text": "I get exhausted easily",
+            "score": 84.0
+          }]
+        },{
+          "q": "Questions about other effects your chest trouble may have on you.",
+          "number": 11,
+          "category": "3",
+          "boolean": true,
+          "a": [{
+            "text": "My cough or breathing is embarrassing in public",
+            "score": 74.1
+          },{
+            "text": "My chest trouble is a nuisance to my family, friends or neighbours",
+            "score": 79.1
+          },{
+            "text": "I get afraid or panic when I cannot get my breath",
+            "score": 87.7
+          },{
+            "text": "I feel that I am not in control of my chest problem",
+            "score": 90.1
+          },{
+            "text": "I have become frail or an invalid because of my chest",
+            "score": 89.9
+          },{
+            "text": "Exercise is not safe for me",
+            "score": 75.7
+          },{
+            "text": "Everything seems too much of an effort",
+            "score": 84.5
+          }]
+        },{
+          "q": "Questions about how activities may be affected by your breathing.",
+          "number": 12,
+          "category": "2",
+          "boolean": true,
+          "a": [{
+            "text": "I take a long time to get washed or dressed",
+            "score": 74.2
+          },{
+            "text": "I cannot take a bath or shower, or I take a long time",
+            "score": 81.0
+          },{
+            "text": "I walk more slowly than other people, or I stop for rests",
+            "score": 71.7
+          },{
+            "text": "Jobs such as housework take a long time, or I have to stop for rests",
+            "score": 70.6
+          },{
+            "text": "If I walk up one flight of stairs, I have to go slowly or stop",
+            "score": 71.6
+          },{
+            "text": "If I hurry or walk fast, I have to stop or slow down",
+            "score": 72.3
+          },{
+            "text": "My breathing makes it difficult to do things such as walk up hills, carry things up stairs, light gardening such as weeding, dance, play bowls or play golf",
+            "score": 74.5
+          },{
+            "text": "My breathing makes it difficult to do things such as carry heavy loads, dig the garden or shovel snow, jog or walk at 5 miles per hour, play tennis or swim",
+            "score": 71.4
+          }]
+        },{
+          "q": "We would like to know how your chest trouble usually affects your daily life.",
+          "number": 13,
+          "category": "3",
+          "boolean": true,
+          "a": [{
+            "text": "I cannot play sports or games",
+            "score": 64.8
+          },{
+            "text": "I cannot go out for entertainment or recreation",
+            "score": 79.8
+          },{
+            "text": "I cannot go out of the house to do the shopping",
+            "score": 81.0
+          },{
+            "text": "I cannot do housework",
+            "score": 79.1
+          },{
+            "text": "I cannot move far from my bed or chair",
+            "score": 94.0
+          }]
+        },{
+          "q": "Tick the statement which you think best describes how your chest affects you.",
+          "number": 14,
+          "category": "3",
+          "a": [{
+            "text": "It does not stop me doing anything I would like to do",
+            "score": 0
+          },{
+            "text": "It stops me doing one or two things I would like to do",
+            "score": 42.0
+          },{
+            "text": "It stops me doing most of the things I would like to do",
+            "score": 84.2
+          },{
+            "text": "It stops me doing everything I would like to do",
+            "score": 96.7
+          }]
+        }
+      ]
+    }
+  ]
+}

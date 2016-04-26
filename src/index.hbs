@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  {{> partials/head}}
+  <body class="mdl-color--grey-100">
+      <!-- MDL Spinner Component -->
+      <aside id="cover">
+        <aside id="spinner">
+          <div class="mdl-spinner mdl-js-spinner is-active"></div>
+        </aside>
+      </aside>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        {{> partials/header}}
+        {{> partials/side}}
+        {{> partials/main}}
+      </div>
+      {{> partials/footer}}
+  </body>
+</html>

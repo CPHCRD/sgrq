@@ -1,0 +1,93 @@
+<article id="new" class="view">
+  <h1 class="mdl-typography--display-1">{{{ new.title }}}</h1>
+  {{{ new.content }}}
+  <form id="questionnaire" action="#/new">
+    <button id="start-new" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+      {{ new.start }}
+    </button>
+    <div id="questionnaires-type" class="questionnaire__part" style="display:none;">
+      <h2 class="mdl-typography--headline">{{ new.select }}</h2>
+      <select id="questionnaires-select" name="type" class="mdl-selectfield">
+        <option selected="selected" value>---</option>
+        {{#each questionnaires as |questionnaire questionnaireNumber|}}
+        <option value="{{ questionnaireNumber }}">{{ questionnaire.name }}</option>
+        {{/each}}
+      </select>
+    </div>
+    {{#each questionnaires as |questionnaire questionnaireNumber|}}
+      <div class="questionnaire questionnaire__part" id="q-{{ questionnaire.name }}" data-number="{{ questionnaireNumber }}" style="display:none;">
+        <h2 class="questionnaire__headline mdl-typography--headline">{{ ../new.fill }}</h2>
+        <p class="questionnaire__description">{{ questionnaire.description }}</p>
+        <ul class="mdl-list">
+        {{#each questionnaire.questions as |question key|}}
+          <li>
+            <h3 class="questionnaire__question mdl-typography--title">{{question.number}}. {{question.q}}</h3>
+            {{#each question.a as |answer number|}}
+              <div class="questionnaire__answer">
+                {{#if question.boolean}}
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--8-col mdl-cell--margin-bottom">{{answer.text}}</div>
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-{{question.number}}-{{number}}-true[{{questionnaireNumber}}]">
+                      <input type="radio" data-boolean="{{question.boolean}}" data-score="{{answer.score}}" data-question="{{question.number}}" data-answer="true" data-id="{{question.number}}-{{number}}" data-category="{{question.category}}" id="option-{{question.number}}-{{number}}-true[{{questionnaireNumber}}]" class="mdl-radio__button" name="question-{{key}}-{{number}}[{{questionnaireNumber}}]" value="{{number}}">
+                      <span class="mdl-radio__label">true</span>
+                    </label>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-{{question.number}}-{{number}}-false[{{questionnaireNumber}}]">
+                      <input type="radio" data-boolean="{{question.boolean}}" data-score="0" data-question="{{question.number}}" data-answer="false" data-id="{{question.number}}-{{number}}" data-category="{{question.category}}" id="option-{{question.number}}-{{number}}-false[{{questionnaireNumber}}]" class="mdl-radio__button" name="question-{{key}}-{{number}}[{{questionnaireNumber}}]" value="{{number}}">
+                      <span class="mdl-radio__label">false</span>
+                    </label>
+                  </div>
+                </div>
+                {{else}}
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-{{question.number}}-{{number}}[{{questionnaireNumber}}]">
+                  <input type="radio" data-score="{{answer.score}}" data-question="{{question.number}}" data-answer="{{number}}" data-id="{{question.number}}" data-category="{{question.category}}" id="option-{{question.number}}-{{number}}[{{questionnaireNumber}}]" class="mdl-radio__button" name="question-{{key}}[{{questionnaireNumber}}]" value="{{number}}">
+                  <span class="mdl-radio__label">{{answer.text}}</span>
+                </label>
+                {{/if}}
+              </div>
+            {{/each}}
+          </li>
+        {{/each}}
+        </ul>
+      </div>
+    {{/each}}
+    <div id="patient-info" class="questionnaire__part" style="display:none;">
+      <h2 class="questionnaire__title mdl-typography--headline">{{ patient.title }}</h2>
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+          <i class="patient__avatar material-icons mdl-list__item-avatar">person</i>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" name="patient-id" type="text" id="patient-id">
+            <label class="mdl-textfield__label" for="patient-id">{{ patient.labels.id }}</label>
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+          <div class="mdl-textfield mdl-js-textfield mdl-datefield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" name="patient-birth" type="date" id="patient-birth">
+            <label class="mdl-textfield__label" for="patient-birth">{{ patient.labels.birth }}</label>
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+          {{ patient.labels.gender }}<br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="patient-gender-male">
+            <input type="radio" id="patient-gender-male" data-value="0" class="mdl-radio__button" name="patient-gender" value="0">
+            <span class="mdl-radio__label">{{ patient.labels.male }}</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="patient-gender-female">
+            <input type="radio" id="patient-gender-female" data-value="1" class="mdl-radio__button" name="patient-gender" value="1">
+            <span class="mdl-radio__label">{{ patient.labels.female }}</span>
+          </label>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+          <div class="mdl-textfield mdl-js-textfield">
+            <textarea class="mdl-textfield__input" type="text" name="patient-notes" rows="3" id="patient-notes"></textarea>
+            <label class="mdl-textfield__label" for="patient-notes">{{ patient.labels.notes }}</label>
+          </div>
+        </div>
+      </div>
+      <button id="submit-new" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        {{ new.submit }}
+      </button>
+    </div>
+  </form>
+</article>

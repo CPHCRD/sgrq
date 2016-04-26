@@ -1,0 +1,236 @@
+@import 'roboto';
+@import 'material-icons';
+@import 'material-design-lite';
+@import 'material-design-lite-select';
+@import 'utilities';
+@import 'print';
+
+.mdl-layout__container {
+  min-width: 450px;
+}
+
+.mdl-typography--display-1 {
+  line-height: 46px;
+}
+
+.page-content {
+  max-width: 1024px;
+}
+
+.content {
+  border-radius: 2px;
+  padding: 15px 56px;
+  margin-bottom: 80px;
+}
+
+.view {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  position: relative; 
+  display: none;
+}
+
+.mdl-layout-title {
+  margin-top: 10px;
+
+  img {
+    width: 48px;
+    height: 48px;
+    margin-right: 5px;
+  }
+
+  .material-icons {
+    display: block;
+    float: left;
+    font-size: 32px;
+    line-height: 48px;
+    margin-right: 5px;
+  }
+}
+
+.mdl-list__item--two-line .mdl-list__item-secondary-content .mdl-list__item-sub-title,
+.mdl-list__item--two-line .mdl-list__item-primary-content .mdl-list__item-sub-title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  line-height: 18px;
+  color: rgba(0,0,0, 0.54);
+  display: block;
+  padding: 0;
+}
+
+.mdl-list__item--two-line,
+.mdl-list__item--two-line .mdl-list__item-primary-content {
+  height: auto;
+}
+
+.questionnaire__part {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 10px -56px;
+  padding: 0 56px;
+}
+
+.questionnaire .mdl-list li {
+  margin-bottom: 40px;
+}
+
+.mdl-data-table td a, .mdl-data-table th a {
+  cursor: pointer;
+}
+
+.questionnaire__description {
+  margin-bottom: 0;
+  color: #828282;
+}
+
+.questionnaire__description + ul {
+  margin-top: 0;
+}
+
+.questionnaire__question {
+  margin-bottom: 12px;
+}
+
+.questionnaire__question,
+.questionnaire__answer {
+  display: block;
+  width: 100%;
+}
+
+.questionnaire__answer > .mdl-grid {
+  padding: 0;
+}
+
+.questionnaire__answer > .mdl-grid > .mdl-cell {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+
+  &.mdl-cell--margin-bottom {
+    margin-bottom: 10px;
+  }
+}
+
+.questionnaire__answer .mdl-cell .mdl-radio + .mdl-radio {
+  margin-left: 10px;
+}
+
+.questionnaire__answer-number {
+  opacity: 0.5;
+  font-style: normal;
+}
+
+.patient__avatar {
+  float: left;
+  margin: 10px 10px 0 0;
+}
+
+.patient__avatar + .mdl-textfield {
+  max-width: 75%;
+}
+
+.mdl-datefield.mdl-textfield--floating-label label {
+  top: 4px;
+}
+
+.questionnaires-list {
+  width: 100%;
+}
+
+.questionnaires-list th {
+  width: 25%;
+}
+
+.questionnaire-date {
+  overflow: hidden;
+}
+
+.questionnaire-date i,
+.questionnaire-date span {
+  display: block;
+  float: left;
+}
+
+.questionnaire-date span {
+  margin: 3px;
+}
+
+.questionnaire-date + .mdl-list {
+  clear: both;
+}
+
+.cite {
+  position: relative;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  i {
+    font-size: 70%;
+    top: -5px;
+    left: 0;
+    position: absolute;
+    font-style: normal;
+  }
+}
+
+#questionnaire .mdl-button {
+  margin-bottom: 20px;
+}
+
+#patient-questionnaires-list tr th:first-child,
+#patient-questionnaires-list tr td:first-child {
+  display: none;
+}
+
+.link--icon {
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+
+  .material-icons {
+    display: block;
+    float: left;
+    margin-right: 5px;
+  }
+}
+
+
+@media (max-width: 839px) {
+  .mdl-textfield {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .mdl-data-table td, .mdl-data-table th {
+    display: block;
+    float: left;
+    height: auto;
+    width: 50%;
+    text-align: left;
+    border: none;
+  }
+  .mdl-data-table thead {
+    display: none;
+  }
+  .mdl-data-table td:first-of-type, .mdl-data-table th:first-of-type {
+    padding-left: 18px;
+  }
+  .mdl-data-table tbody tr {
+    padding: 20px;
+    display: block;
+    height: auto;
+    overflow: hidden;
+  }
+  .mdl-data-table tbody tr:not(:first-child) {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .mdl-data-table td a, .mdl-data-table th a {
+    display: block;
+    float: left;
+    margin: 5px 10px 5px 0;
+  }
+}

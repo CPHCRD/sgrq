@@ -1,0 +1,6 @@
+.DS_Store
+npm-debug.log
+node_modules/
+electron-packager/
+build/assets/
+build/index.html

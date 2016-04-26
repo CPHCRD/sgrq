@@ -1,0 +1,25 @@
+{
+  "name": "SGRQ-application",
+  "version": "1.0.0",
+  "appname": "SGRQ",
+  "description": "A medical Electron application",
+  "homepage": "http://sgrq.github.io",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "package": "electron-packager ./ SGRQ --all --out --ignore=\"node_modules\" ~/Desktop/SGRQ --overwrite --icon=./sgrq-icon",
+    "postinstall": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electron/electron-quick-start.git"
+  },
+  "author": {
+    "name": "Jonathan Argentiero",
+    "email": "jonathan.argentiero@gmail.com"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^0.37.0",
+    "electron-packager": "*"
+  }
+}
