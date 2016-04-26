@@ -7,8 +7,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "package": "electron-packager ./ SGRQ --all --out --ignore=\"node_modules\" ~/Desktop/SGRQ --overwrite --icon=./sgrq-icon",
-    "postinstall": "npm start"
+    "package": "electron-packager ./ SGRQ --all --out --ignore=\"node_modules\" ~/Desktop/SGRQ --overwrite --icon=./sgrq-icon"
   },
   "repository": {
     "type": "git",
