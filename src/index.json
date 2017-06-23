@@ -31,7 +31,7 @@
       "male": "Male",
       "female": "Female",
       "gender": "Gender",
-      "notes": "Notes" 
+      "notes": "Notes"
     }
   },
   "patients": {
@@ -51,7 +51,7 @@
       "title": "St. George’s Respiratory Questionnaire",
       "description": "Questions about how much chest trouble you have, your activity and the impact.",
       "categories": {
-        "1": { 
+        "1": {
           "name": "Symptoms",
           "maxAnswersMissing": 2
         },
@@ -76,10 +76,10 @@
             "text": "Several days a week",
             "score": 63.2
           },{
-            "text": "A few days a week",
+            "text": "A few days a month",
             "score": 29.3
           },{
-            "text": "With chest infection a week",
+            "text": "Only with chest infections",
             "score": 28.1
           },{
             "text": "Not at all",
@@ -96,10 +96,10 @@
             "text": "Several days a week",
             "score": 60.0
           },{
-            "text": "A few days a week",
+            "text": "A few days a month",
             "score": 34.0
           },{
-            "text": "With chest infection a week",
+            "text": "Only with chest infections",
             "score": 30.2
           },{
             "text": "Not at all",
@@ -116,10 +116,10 @@
             "text": "Several days a week",
             "score": 71.4
           },{
-            "text": "A few days a week",
+            "text": "A few days a month",
             "score": 43.7
           },{
-            "text": "With chest infection a week",
+            "text": "Only with chest infections",
             "score": 35.7
           },{
             "text": "Not at all",
@@ -136,10 +136,10 @@
             "text": "Several days a week",
             "score": 71.0
           },{
-            "text": "A few days a week",
+            "text": "A few days a month",
             "score": 45.6
           },{
-            "text": "With chest infection a week",
+            "text": "Only with chest infections",
             "score": 36.4
           },{
             "text": "Not at all",
@@ -211,7 +211,7 @@
             "score": 0.0
           },{
             "text": "Yes",
-            "score": 62.0          
+            "score": 62.0
           }]
         },{
           "q": "How would you describe your chest condition?",
@@ -228,7 +228,7 @@
             "score": 34.6
           },{
             "text": "Causes no problem",
-            "score": 0.0      
+            "score": 0.0
           }]
         },{
           "q": "If you have ever had paid employment?",
@@ -242,7 +242,7 @@
             "score": 77.6
           },{
             "text": "My chest trouble does not affect my work",
-            "score": 0.0            
+            "score": 0.0
           }]
         },{
           "q": "Questions about what activities usually make you feel breathless these days",
@@ -269,7 +269,7 @@
             "score": 75.1
           },{
             "text": "Playing sports or games",
-            "score": 72.1 
+            "score": 72.1
           }]
         },{
           "q": "More questions about your cough and breathlessness these days",
@@ -293,7 +293,7 @@
             "score": 87.9
           },{
             "text": "I get exhausted easily",
-            "score": 84.0          
+            "score": 84.0
           }]
         },{
           "q": "Questions about other effects your chest trouble may have on you",
@@ -323,7 +323,7 @@
             "score": 75.7
           },{
             "text": "Everything seems to much of an effort",
-            "score": 84.5                  
+            "score": 84.5
           }]
         },{
           "q": "Questions about your medications",
@@ -341,7 +341,7 @@
             "score": 81.1
           },{
             "text": "My medication interferes with my life a lot",
-            "score": 70.3                       
+            "score": 70.3
           }]
         },{
           "q": "Questions about how activities may be affected by your breathing",
@@ -371,10 +371,10 @@
             "score": 74.5
           },{
             "text": "My breathing makes it difficult to do things such as carry heavy loads, dig the garden or shovel snow, jog or walk at 5 miles per hour, play tennis or swim",
-            "score": 71.4   
+            "score": 71.4
           },{
             "text": "My breathing makes it difficult to do things such as very heavy manual work, run, cycle, swim fast or play competitive sports",
-            "score": 63.5       
+            "score": 63.5
           }]
         },{
           "q": "Questions about your medications",
@@ -395,7 +395,7 @@
             "score": 79.1
           },{
             "text": "I cannot move far from my bed or chair",
-            "score": 94.0     
+            "score": 94.0
           }]
         },{
           "q": "Tick the statement which you think best describes how your chest affects you.",
@@ -414,14 +414,14 @@
             "text": "It stops me doing everything I would like to do",
             "score": 96.7
           }]
-        }]      
+        }]
     },
     {
       "name": "SGRQ-C",
       "title": "St. George’s Respiratory Questionnaire for COPD",
       "description": "Questions about how much chest trouble you have, your activity and the impact.",
       "categories": {
-        "1": { 
+        "1": {
           "name": "Symptoms",
           "maxAnswersMissing": 1
         },
