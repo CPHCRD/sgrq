@@ -1,5 +1,5 @@
-![https://travis-ci.org/SGRQ/sgrq.svg](https://travis-ci.org/SGRQ/sgrq.svg)
- 
+![https://travis-ci.org/cphcrd/sgrq.svg](https://travis-ci.org/cphcrd/sgrq.svg)
+
 # SGRQ
 
 St. George’s Respiratory Questionnaire application for COPD patients
@@ -11,7 +11,7 @@ St. George’s Respiratory Questionnaire application for COPD patients
 
 If you are interested in testing out the application you can download the latest pre-built package version for Windows, Mac and Linux on [sgrq.github.io](http://sgrq.github.io).
 
-All previous versions can be found under the [release section](https://github.com/SGRQ/sgrq/releases) of this repository.
+All previous versions can be found under the [release section](https://github.com/cphcrd/sgrq/releases) of this repository.
 
 If you are interested in contributing or building the application yourself follow the instructions:
 
@@ -26,7 +26,7 @@ If you want to clone and contribute to the project you should to install [Git](h
 First clone or download this repository running in your terminal:
 
 ```
-git clone https://github.com/SGRQ/sgrq.git
+git clone https://github.com/cphcrd/sgrq.git
 ```
 
 then navigate to the root folder of the project:
@@ -102,16 +102,16 @@ npm run build:electron
 
 ## Contributing
 
-You can directly create a pull request for this repository. Your code will be tested by [Travis CI](https://travis-ci.org/SGRQ/sgrq).
+You can directly create a pull request for this repository. Your code will be tested by [Travis CI](https://travis-ci.org/cphcrd/sgrq).
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/SGRQ/sgrq/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/cphcrd/sgrq/tags).
 
 
 ## Bug reports
 
-Please declare found bugs on the [issues section](https://github.com/SGRQ/sgrq/issues) of the repository.
+Please declare found bugs on the [issues section](https://github.com/cphcrd/sgrq/issues) of the repository.
 
 ## Authors
 
@@ -119,7 +119,7 @@ Please declare found bugs on the [issues section](https://github.com/SGRQ/sgrq/i
 * Jonathan Argentiero, Developer and maintainer
 * Andreas Ronit, MD
 
-See also the list of [contributors](https://github.com/SGRQ/sgrq/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/cphcrd/sgrq/contributors) who participated in this project.
 
 ## License
 

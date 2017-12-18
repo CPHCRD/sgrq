@@ -1,10 +1,11 @@
 {
   "name": "SGRQ",
   "version": "1.0.1",
+  "productName": "SGQR",
   "description": "A medical application",
   "author": {
-    "name": "Jonathan Argentiero",
-    "email": "jonathan.argentiero@gmail.com"
+    "name": "CPHCRD",
+    "url": "https://cphcrd.github.io"
   },
   "homepage": "http://sgrq.github.io",
   "main": "",
@@ -23,6 +24,7 @@
     "build:electron": "npm run build:prod && cd build && npm run package",
     "test": "browserify -t babelify ./test/*.spec.js | tape-run --browser=\"phantomjs\" | tap-spec",
     "test:electron": "browserify -t babelify ./test/*.spec.js | tape-run | tap-spec",
+    "package": "electron-packager . SGQR --all",
     "postinstall": "npm run build:prod:run"
   },
   "dependencies": {
@@ -41,6 +43,7 @@
     "browser-sync-webpack-plugin": "^1.0.1",
     "browserify": "^13.0.0",
     "css-loader": "^0.23.1",
+    "electron-prebuilt": "^1.4.13",
     "es6-promise": "^3.0.2",
     "exports-loader": "^0.6.2",
     "file-loader": "^0.8.5",
