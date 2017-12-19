@@ -1,4 +1,4 @@
-![https://travis-ci.org/cphcrd/sgrq.svg](https://travis-ci.org/cphcrd/sgrq.svg)
+![https://travis-ci.org/CPHCRD/sgrq.svg](https://travis-ci.org/CPHCRD/sgrq.svg)
 
 # SGRQ
 
