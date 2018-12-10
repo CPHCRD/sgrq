@@ -4,3 +4,4 @@ node_modules/
 electron-packager/
 build/assets/
 build/index.html
+build/release-builds

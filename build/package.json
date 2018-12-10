@@ -1,24 +1,30 @@
 {
   "name": "SGRQ-application",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "appname": "SGRQ",
   "description": "A medical Electron application",
   "homepage": "http://sgrq.github.io",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "package": "electron-packager ./ SGRQ --all --out --ignore=\"node_modules\" ~/Desktop/SGRQ --overwrite --icon=./sgrq-icon"
+    "package": "npm run package-linux && npm run package-mac && npm run package-windows",
+    "package-mac": "electron-packager . SGRQ --platform=darwin --overwrite --icon=sgrq-icon --prune=true --out=release-builds --app-bundle-id='com.cphcrd.sgrq' --app-version='1.1.0' --build-version='1.1.000' --osx-sign",
+    "package-linux": "electron-packager . SGRQ --asar --platform=linux --overwrite --icon=sgrq-logo --prune=true --out=release-builds",
+    "package-windows": "electron-packager . SGRQ --asar --platform=win32 --version-string.CompanyName=CPHCRD --version-string.ProductName=SGRQ --overwrite --icon=sgrq-icon --prune=true --out=release-builds"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron/electron-quick-start.git"
+    "url": "git+https://github.com/CPHCRD/sgrq.git"
   },
   "author": {
     "name": "Jonathan Argentiero",
     "email": "jonathan.argentiero@gmail.com"
   },
   "devDependencies": {
-    "electron-prebuilt": "^0.37.0",
-    "electron-packager": "*"
+    "electron": "^3.0.10",
+    "electron-packager": "^13.0.0"
+  },
+  "engines": {
+    "node": "6"
   }
 }
