@@ -1,4 +1,4 @@
-![https://travis-ci.org/CPHCRD/sgrq.svg](https://travis-ci.org/CPHCRD/sgrq.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/764b0b77-af7e-434b-bff7-263f1f00865d/deploy-status)](https://app.netlify.com/sites/sgrq/deploys)
 
 # SGRQ
 
@@ -9,7 +9,7 @@ St. George’s Respiratory Questionnaire application for COPD patients
 
 ## Getting Started
 
-If you are interested in testing out the application you can download the latest pre-built package version for Windows, Mac and Linux on [sgrq.github.io](http://sgrq.github.io).
+If you are interested in testing out the application you can download the latest pre-built package version for Windows, Mac and Linux on [sgrq.github.io](http://sgrq.github.io) or access directly via browser on [sgrq.netlify.app](https://sgrq.netlify.app/).
 
 All previous versions can be found under the [release section](https://github.com/cphcrd/sgrq/releases) of this repository.
 
