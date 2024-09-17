@@ -69,6 +69,6 @@
     "whatwg-fetch": "^0.11.0"
   },
   "engines": {
-    "node": "6"
+    "node": "8"
   }
 }
